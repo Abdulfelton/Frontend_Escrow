@@ -1,0 +1,274 @@
+/* Transaction Management Styles */
+.transaction-management {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 4px 0;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.section-subtitle {
+  font-size: 0.875rem; /* 14px */
+  color: #6b7280;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.transactions-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.transactions-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.transactions-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.transactions-list::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+.transaction-card {
+  background: white;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.transaction-card:hover {
+  border-color: #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.transaction-id-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.transaction-id {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 600;
+  color: #374151;
+  background: #f9fafb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.025em;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+.status-icon {
+  font-size: 14px;
+}
+
+.transaction-amount {
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+  color: #111827;
+  margin-left: auto;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.review-btn {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.review-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-icon {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.project-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.parties-info {
+  display: flex;
+  gap: 24px;
+}
+
+.party {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.party-icon {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.party-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.party-role {
+  font-size: 12px;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.party-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.status-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 12px;
+  border-top: 1px solid #f1f3f4;
+}
+
+.current-status,
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status-label,
+.date-label {
+  font-size: 12px;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-description {
+  font-size: 13px;
+  color: #2c3e50;
+  max-width: 200px;
+}
+
+.date-value {
+  font-size: 13px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transaction-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .transaction-id-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .transaction-amount {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  
+  .parties-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .status-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .transactions-list {
+    max-height: 400px;
+  }
+}
